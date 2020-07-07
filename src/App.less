@@ -1,0 +1,34 @@
+@import "./animation.less";
+
+.root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .music {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 2;
+    &.play {
+      animation: music 3s 0s linear infinite;
+    }
+    i {
+      font-size: 30px;
+      color: red;
+    }
+  }
+  .space-carousel {
+    touch-action: none;
+    height: 100%!important;
+    .slider-frame {
+      height: 100%!important;
+      .slider-list {
+        height: 100%!important;
+        .slider-slide {
+          height: 100%!important;
+        }
+      }
+    }
+  }
+}
+
